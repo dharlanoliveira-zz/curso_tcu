@@ -1,0 +1,15 @@
+npm init -y
+npm install typescript --save-dev
+npm install @types/node --save-dev
+npm install ts-node --save-dev
+npm install nodemon --save-dev
+node ./node_modules/typescript/lib/tsc --init
+
+Scripts
+
+"scripts": {
+   "start": "npm run build:live",
+   "build:live": "nodemon --exec ts-node index.ts"
+ }
+
+ npm start
