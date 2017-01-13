@@ -4,15 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build:live",
-    "build:live": "nodemon --exec ts-node index.ts"
+    "build": "tsc --watch --rootDir . --outDir out typings.ts",
+    "run": "nodemon --watch out out/typings.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^6.0.59",
+    "@types/core-js": "^0.9.35",
+    "@types/node": "^6.0.60",
+    "core-js": "^2.4.1",
     "ts-node": "^2.0.0",
     "typescript": "^2.1.4"
+  },
+  "dependencies": {
+    "@types/node": "^6.0.60"
   }
 }
