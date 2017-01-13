@@ -5,19 +5,19 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc --watch -p .",
-    "run": "nodemon --watch out out/typings.js"
+    "run": "nodemon --watch out out/servidor.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/core-js": "^0.9.35",
+    "@types/express": "^4.0.34",
     "@types/node": "^6.0.60",
-    "core-js": "^2.4.1",
-    "ts-node": "^2.0.0",
+    "nodemon": "^1.11.0",
     "typescript": "^2.1.4"
   },
   "dependencies": {
-    "@types/node": "^6.0.60"
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
   }
 }
