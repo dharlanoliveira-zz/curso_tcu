@@ -1,0 +1,24 @@
+<section class="row">
+    <div class="col-md-12">
+        <h1>Tasklist</h1>
+        <table  class="table table-striped table-hover ">
+            <thead>
+            <tr>
+                <th>Tarefa</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let task of tasks">
+                <td >
+                    {{task}}
+                </td>
+                <td width="30px">
+                    <a href="javascript:void(0)" class="btn btn-danger btn-fab btn-fab-mini"><i class="material-icons">delete_forever</i></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <a [routerLink]="['/newtask']" class="btn btn-raised btn-primary">Adicionar</a>
+    </div>
+
+</section>
