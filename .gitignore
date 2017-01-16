@@ -9,3 +9,7 @@
 /4-cliente-angular/.idea
 /4-cliente-angular/app/**/*.js
 /4-cliente-angular/app/**/*.js.map
+/4-bootstrapgrid/.idea
+/4-bootstrapgrid/node_modules
+/5-cliente-angular/.idea
+/5-cliente-angular/node_modules
