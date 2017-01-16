@@ -1,0 +1,25 @@
+{
+  "name": "2-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --watch -p .",
+    "run": "nodemon --watch out out/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/core-js": "^0.9.35",
+    "@types/node": "^6.0.60",
+    "@types/rx-core": "^4.0.0",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.0.3",
+    "ts-node": "^2.0.0",
+    "typescript": "^2.1.4"
+  },
+  "dependencies": {
+    "@types/node": "^6.0.60"
+  }
+}
