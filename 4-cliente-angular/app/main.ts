@@ -5,6 +5,11 @@ import {TasklistComponent} from "./tasklist.component";
 import {Routes, RouterModule} from "@angular/router";
 import {AppComponent} from "./app.component";
 import {NewTaskComponent} from "./newtask.component";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {ToUpper} from "./diretivas/toupper.directive";
+import {PipesComponent} from "./exemplos/pipes.component";
+import {FilterPipe} from "./pipes/filter.pipe";
+import {OrderPipe} from "./pipes/order.pipe";
 
 const appRoutes: Routes = [
     { path: 'tasks',
@@ -16,12 +21,15 @@ const appRoutes: Routes = [
     { path: '',
         redirectTo: '/tasks',
         pathMatch: 'full'
-    }
+    }/*,
+    { path: 'pipes',
+        component: PipesComponent
+    },*/
 ];
 
 @NgModule({
-    imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
-    declarations: [AppComponent,TasklistComponent, NewTaskComponent],
+    imports: [BrowserModule, RouterModule.forRoot(appRoutes), FormsModule, ReactiveFormsModule],
+    declarations: [AppComponent,TasklistComponent, NewTaskComponent, ToUpper, OrderPipe, FilterPipe, /*, PipesComponent*/],
     bootstrap: [AppComponent]
 })
 export class AppModule {

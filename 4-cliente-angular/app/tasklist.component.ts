@@ -5,5 +5,6 @@ import { Component } from '@angular/core';
     templateUrl: 'app/tasklist.html'
 })
 export class TasklistComponent  {
-    tasks : string[] = ['Task1','Task2','Task3'];
+    tasks : string[] = ['bTask1','aTask2','cTask3'];
+    filtro:string;
 }

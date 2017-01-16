@@ -1,6 +1,38 @@
+<!--
+    0. Fazer exemplo simples com ngModel
+    1. Apresentar Template form
+    2. Template form com validação básica
+-->
+
 <section class="row">
-    <div class="col-md-12">
+    <!--div class="col-md-12">
         <h1>New Task</h1>
-    </div>
-    <a [routerLink]="['/tasks']" class="btn btn-raised btn-primary">Voltar</a>
+        <form #f="ngForm">
+            {{f.value | json}}
+            <input type="text" name="task" ngModel>
+        </form>
+    </div-->
+    <!--form #f="ngForm" (ngSubmit)="novaTarefa(f.value)">
+        <div class="col-md-12">
+            <h1>New Task</h1>
+        </div>
+        <div class="form-group is-empty">
+            <label class="control-label" for="task">Nome da Task</label>
+            <input type="text" class="form-control" id="task" name="task" ngModel required minlength="5">
+        </div>
+        <input type="submit" class="btn btn-raised btn-primary" value="Criar tarefa" [disabled]="!f.valid"/>
+        <input type="button" [routerLink]="['/tasks']" class="btn btn-raised btn-danger" value="Voltar"/>
+    </form-->
+    <form  [formGroup]="formModel" #f="ngForm" (ngSubmit)="newTask(f.value)">
+        <div class="col-md-12">
+            <h1>New Task</h1>
+        </div>
+        <div class="form-group is-empty">
+            <label class="control-label" for="task">Nome da Task</label>
+            <input type="text" class="form-control" to-upper id="task" formControlName="task">
+        </div>
+        <input type="submit" class="btn btn-raised btn-primary" value="Criar tarefa" [disabled]="!formModel.valid"/>
+        <input type="button" [routerLink]="['/tasks']" class="btn btn-raised btn-danger" value="Voltar"/>
+    </form>
+
 </section>
