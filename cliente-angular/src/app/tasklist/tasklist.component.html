@@ -1,0 +1,20 @@
+<section class="row">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Tarefa</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let task of tasks ">
+      <td>
+        {{task}}
+      </td>
+
+    </tr>
+    </tbody>
+  </table>
+
+  <a [routerLink]="['/newtask']" class="btn btn-raised btn-primary">Adicionar</a>
+</section>
+

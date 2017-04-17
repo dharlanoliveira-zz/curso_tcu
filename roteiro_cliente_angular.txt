@@ -1,0 +1,19 @@
+* npm install -g @angular/cli
+* ng new cliente-angular4
+* cd cliente-angular4
+* executar npm install
+* rodar testes unitários
+* rodar testes e2e
+* Mecanismo de boot da aplicação
+* Renomear app para task list
+* Criar mecanismo de rotas
+* Criar tasks restritas ao component
+* Adicionar bootstrap e configurar no arquivo ".angular-cli.json"
+* Adicionar estilo a tabela da tasklist
+* Criar tela de adicionar tarefa (ng generate component newtask)
+* Fazer exemplo simples com ngModel
+* Apresentar Template form
+* Template form com validação básica
+* criar diretiva para converter letras em maisculo
+* ng eject
+* explicar webpack

@@ -5,15 +5,16 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc --watch -p .",
-    "run": "nodemon --watch out out/typings.js"
+    "run": "nodemon --watch out out/basico_typescript.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/core-js": "^0.9.35",
+    "@types/core-js": "^0.9.41",
     "@types/node": "^6.0.60",
     "core-js": "^2.4.1",
+    "nodemon": "^1.11.0",
     "ts-node": "^2.0.0",
     "typescript": "^2.1.4"
   },

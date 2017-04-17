@@ -19,6 +19,7 @@ export class ToUpper{
     }
 
     toupper() {
+        console.log('oiiiiiiiiiiiiiiiiiiiiiiiii')
         let formControl:FormControl = this.formControlName.control;
         formControl.setValue(formControl.value.toString().toUpperCase());
     }

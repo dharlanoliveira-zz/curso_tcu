@@ -224,10 +224,6 @@
     let ferrari:Ferrari = new Ferrari();
     console.log(ferrari.valoripva())
 
-    interface IPatrimonio<T extends ICarro>{
-        valorTotal();
-    }
-
     interface IBase<T> {
         id: T;
     }
@@ -243,7 +239,8 @@
 
     let classe:DerivedClass = new DerivedClass();
     classe.id = 10;
-    console.log(classe.id)
+    classe.name = 'teste';
+    console.log(classe.id + '->' + classe.name)
 
 
 });
@@ -275,7 +272,7 @@
     person.growOld();
     console.log(person.age);
 
-})();
+})
 
 
 
