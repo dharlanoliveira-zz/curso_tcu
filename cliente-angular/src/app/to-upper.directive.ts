@@ -1,20 +1,20 @@
 import {Directive, ElementRef, HostListener} from '@angular/core';
 import {FormControl, FormControlName} from '@angular/forms';
+import {element} from 'protractor';
 
 @Directive({
-  selector: '[formControlName][to-upper]',
-  providers: [FormControlName]
+  selector: '[to-upper]'
+  /*selector: 'input[to-upper]'*/
 })
 export class ToUpperDirective {
 
-  constructor(public element: ElementRef, public formControlName: FormControlName) {
+  constructor(public element: ElementRef) {
   }
 
-  @HostListener('(keyup)')
+  @HostListener('keyup')
   public onInputChange() {
-    console.log('oi')
-    const formControl: FormControl = this.formControlName.control;
-    formControl.setValue(formControl.value.toString().toUpperCase());
+    let valor = this.element.nativeElement.value;
+    this.element.nativeElement.value = valor.toUpperCase();
   }
 
 }
