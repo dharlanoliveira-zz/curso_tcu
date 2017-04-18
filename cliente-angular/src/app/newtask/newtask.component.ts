@@ -1,4 +1,4 @@
-import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
+import {ChangeDetectorRef, Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
 import {Http} from '@angular/http';
@@ -7,6 +7,7 @@ import {Http} from '@angular/http';
   selector: 'newtask',
   templateUrl: './newtask.component.html',
   styleUrls: ['./newtask.component.css']
+  /*encapsulation: ViewEncapsulation.Emulated -- Explicar junto com o CSS*/
 })
 export class NewtaskComponent implements OnInit {
 
