@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
+import {Http} from '@angular/http';
 
 @Component({
   selector: 'app-newtask',
@@ -11,7 +12,7 @@ export class NewtaskComponent implements OnInit {
 
   private formModel: FormGroup;
 
-  constructor(public formBuilder: FormBuilder, public router: Router) {
+  constructor(public formBuilder: FormBuilder, public router: Router, public http: Http) {
 
   }
 
@@ -26,7 +27,8 @@ export class NewtaskComponent implements OnInit {
   }
 
   public newTask(f: any) {
-    this.novoFormulario();
+    this.http.post('http://localhost:3000/tasks', {task: f.task})
+      .subscribe(() => this.router.navigate(['tasks']));
   }
 
 }

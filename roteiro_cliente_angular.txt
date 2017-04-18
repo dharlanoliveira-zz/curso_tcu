@@ -15,5 +15,14 @@
 * Apresentar Template form
 * Template form com validação básica
 * criar diretiva para converter letras em maisculo
+* Fazer tutorial de rxjs
+* fazer o newtask chamar o servico http
+* fazer o tasks chamar o serviço http
+* adicionar tratamento para o caso de não existirem tarefas
+* adicionar opção para excluir tarefa
+* Corrigir defeito da ultima letra ficando em minusculo
+* Adicionar bootstrap material design
+* Adicionar fonte roboto e material icons
+* Adicionar opção deletar item no index.html
 * ng eject
 * explicar webpack
