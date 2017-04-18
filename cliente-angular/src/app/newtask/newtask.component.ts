@@ -4,7 +4,7 @@ import {Router} from '@angular/router';
 import {Http} from '@angular/http';
 
 @Component({
-  selector: 'app-newtask',
+  selector: 'newtask',
   templateUrl: './newtask.component.html',
   styleUrls: ['./newtask.component.css']
 })

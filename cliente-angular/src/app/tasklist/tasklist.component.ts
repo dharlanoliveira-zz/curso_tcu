@@ -3,7 +3,7 @@ import {Http, Response} from '@angular/http';
 import * as _ from 'lodash';
 
 @Component({
-  selector: 'app-tasklist',
+  selector: 'tasklist',
   templateUrl: './tasklist.component.html',
   styleUrls: ['./tasklist.component.css']
 })
