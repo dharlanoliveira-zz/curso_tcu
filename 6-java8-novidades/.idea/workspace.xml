@@ -2,91 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57ac56e4-249c-4125-b044-e93595f7ed7c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/app.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/app.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/app.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/diretivas/toupper.directive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/diretivas/toupper.directive.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/diretivas/toupper.directive.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/exemplos/pipes.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/exemplos/pipes.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/exemplos/pipes.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/exemplos/pipes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/main.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/main.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/newtask.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/newtask.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/newtask.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/newtask.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/pipes/filter.pipe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/pipes/filter.pipe.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/pipes/filter.pipe.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/pipes/order.pipe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/pipes/order.pipe.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/pipes/order.pipe.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/tasklist.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/tasklist.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/tasklist.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/app/tasklist.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/bs-config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../5-cliente-angular/systemjs.config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../7-java8-novidades/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../7-java8-novidades/src/main/java/curso/ex1/ConjuntoMacas.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../7-java8-novidades/src/main/java/curso/ex1/Filtrar1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../7-java8-novidades/src/main/java/curso/ex1/Filtrar2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../7-java8-novidades/src/main/java/curso/ex1/Filtrar3.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../7-java8-novidades/src/main/java/curso/ex1/Imprimir.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../7-java8-novidades/src/main/java/curso/ex1/Maca.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../7-java8-novidades/src/main/java/curso/ex1/MacasCriterio.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../7-java8-novidades/src/main/java/curso/interfaces_funcionais/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../7-java8-novidades/src/main/java/curso/stream/base/Trader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../7-java8-novidades/src/main/java/curso/stream/base/Transaction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../7-java8-novidades/src/main/java/curso/stream/operacoes_basicas/Dish.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../7-java8-novidades/src/main/java/curso/stream/operacoes_basicas/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../7-java8-novidades/src/main/java/curso/stream/operacoes_complexas/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../7-java8-novidades/stream.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/.angular-cli.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/e2e/app.e2e-spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/e2e/app.po.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/e2e/tsconfig.e2e.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/protractor.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/app/app.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/app/newtask/newtask.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/app/newtask/newtask.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/app/newtask/newtask.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/app/newtask/newtask.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/app/root.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/app/tasklist/tasklist.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/app/tasklist/tasklist.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/app/tasklist/tasklist.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/app/tasklist/tasklist.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/app/to-upper.directive.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/app/to-upper.directive.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/assets/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/environments/environment.prod.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/environments/environment.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/main.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/polyfills.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/test.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/tsconfig.app.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/tsconfig.spec.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/src/typings.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cliente-angular/tslint.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../roteiro_cliente_angular.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../5-cliente-angular/package.json" afterPath="$PROJECT_DIR$/../5-cliente-angular/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../5-cliente-angular/tsconfig.json" afterPath="$PROJECT_DIR$/../5-cliente-angular/tsconfig.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/curso/ex1/ConjuntoMacas.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/curso/ex1/Filtrar1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/curso/ex1/Filtrar2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/curso/ex1/Filtrar3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/curso/ex1/Imprimir.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/curso/ex1/Maca.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/curso/ex1/MacasCriterio.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/curso/interfaces_funcionais/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/curso/stream/base/Trader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/curso/stream/base/Transaction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/curso/stream/operacoes_basicas/Dish.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/curso/stream/operacoes_basicas/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/curso/stream/operacoes_complexas/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stream.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -772,7 +704,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492622904632</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Evoluindo curso de java8">
+      <created>1492623969848</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1492623969848</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -793,7 +732,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34947917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34947917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
