@@ -3,7 +3,18 @@ package curso.ex1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FiltrarJava7 {
+import static curso.ex1.Imprimir.imprimir;
+
+public class Filtrar1 {
+
+    public static void main(String[] args) {
+        ConjuntoMacas macas = new ConjuntoMacas();
+        List<Maca> macasPorCor = filtrarMacasPelaCor(macas.todas(),"verde");
+        List<Maca> macasPorPeso = filtrarMacasPeloPeso(macas.todas(),0.9);
+
+        imprimir(macasPorCor, "Maçãs por cor");
+        imprimir(macasPorPeso, "Maçãs por peso");
+    }
 
     public static List<Maca> filtrarMacasPeloPeso(List<Maca> conjunto, double peso) {
         List<Maca> result = new ArrayList<>();
@@ -23,13 +34,6 @@ public class FiltrarJava7 {
             }
         }
         return result;
-    }
-
-    public static void imprimir(List<Maca> macas, String label) {
-        System.out.println(" --- " + label + " ---");
-        for(Maca maca : macas) {
-            System.out.println(maca);
-        }
     }
 
 

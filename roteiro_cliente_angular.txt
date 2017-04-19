@@ -24,5 +24,7 @@
 * Adicionar bootstrap material design
 * Adicionar fonte roboto e material icons
 * Adicionar opção deletar item no index.html
+* Adicionar lodash ao projeto e ajustar delete para fazer o compact
+* Editar o css de um dos componentes e explicar o Shadow DOM (newtask.component.css)
 * ng eject
 * explicar webpack

@@ -1,4 +1,4 @@
-package curso.stream;
+package curso.stream.base;
 
 public class Transaction {
     private final Trader trader;

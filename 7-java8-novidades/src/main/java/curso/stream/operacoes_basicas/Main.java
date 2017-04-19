@@ -1,7 +1,12 @@
-package curso.stream;
+package curso.stream.operacoes_basicas;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+import static java.util.Comparator.comparing;
 
 public class Main {
 
@@ -20,7 +25,6 @@ public class Main {
         //1. Map
         /*menu.stream()
                 .map((d) -> d.getName())
-                .collect(Collectors.toList())
                 .forEach(System.out::println);*/
 
         /*menu.stream()
@@ -28,7 +32,7 @@ public class Main {
                 .map(String::length)
                 .forEach(System.out::println);*/
 
-        /*System.out.println(menu.stream()-*
+        /*System.out.println(menu.stream()
                 .mapToInt(Dish::getCalories)
                 .sum());*/
 
@@ -63,9 +67,9 @@ public class Main {
 
         /*System.out.println(menu
                 .stream()
-                .anyMatch(Dish::isVegetarian));
+                .anyMatch(Dish::isVegetarian));*/
 
-        System.out.println(menu
+        /*System.out.println(menu
                 .stream()
                 .anyMatch((d) -> !d.isVegetarian()));*/
 
@@ -81,28 +85,28 @@ public class Main {
 
         //6. Findfirst and optional
 
-        /*
-        Optional<Integer> firstSquareDivisibleByThree
+
+        /*Optional<Integer> firstSquareDivisibleByThree
                 = someNumbers.stream()
                 .map(x -> x * x)
-                .filter(x -> x % 22 == 0)
-                .findFirst(); // 9
+                .filter(x -> x % 3 == 0)
+                .findFirst(); // 9*/
 
-        //System.out.println(firstSquareDivisibleByThree
-        //     .orElse(1));
+        /*System.out.println(firstSquareDivisibleByThree
+             .orElse(1));*/
 
-        System.out.println(firstSquareDivisibleByThree
+        /*System.out.println(firstSquareDivisibleByThree
                 .orElseThrow(() -> new RuntimeException("Falha")));*/
 
 
         //7. Reducing
 
-        /*System.out.println(someNumbers.stream().reduce(0, (a, b) -> a + b));
+        System.out.println(someNumbers.stream().reduce(0, (a, b) -> a + b));
         System.out.println(someNumbers.stream().reduce(1, (a, b) -> a + b));
         System.out.println(someNumbers.stream().reduce(0, Integer::sum));
         someNumbers.stream().reduce(Integer::sum).ifPresent(System.out::println);
         someNumbers.stream().reduce(Integer::max).ifPresent(System.out::println);
-        someNumbers.stream().reduce(Integer::min).ifPresent(System.out::println);*/
+        someNumbers.stream().reduce(Integer::min).ifPresent(System.out::println);
 
 
     }
