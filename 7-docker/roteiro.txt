@@ -1,0 +1,92 @@
+#Pull de containers
+    docker pull nginx:latest
+    docker pull busybox:latest
+
+#Básico de containers
+    docker run --detach --name web nginx:latest
+    docker run --interative --tty --link web:web --name web_test busybox:latest /bin/sh
+    wget -O - http://web:80
+
+    docker exec -it web /bin/bash
+    env (dentro dos 2 containers e fora)
+
+    docker ps (colunas)
+    docker stop web
+    docker ps -a
+    docker start web
+
+    docker logs web
+    docker logs -f web
+
+    #Usando comando create
+    docker create -d nginx
+    docker start nginx
+    docker rm $(docker ps -a -q)
+
+    #Parando e removendo todos os containers
+    docker stop $(docker ps -a -q)
+    docker rm $(docker ps -a -q)
+
+    #Usando variável de ambiente para gerenciar o id do container
+    NGINX_ID=$(docker create nginx)
+    docker start $NGINX_ID
+    docker ps
+    docker inspect $NGINX_ID
+    docker rm -f $NGINX_ID
+
+    #Variáveis de ambiente
+    docker run -it -eVARIAVEL=teste --name env-test busybox /bin/sh
+    env
+
+    #Restart policy
+    docker run -d --name teste --restart always nginx
+    docker stop teste
+    docker ps
+    sudo systemctl restart docker
+    docker ps
+
+    #Remover containers automaticamente ao finalizar
+    docker run --rm --name auto-exit-test busybox:latest echo Hello World
+
+    #Removendo imagens
+    docker pull mongo:3.0
+    docker images
+    docker rmi mongo:3.0
+    docker images
+
+    #Salvando imagens para arquivos
+    docker save -o teste.tar busybox:latest
+    ls -la
+    docker load -i teste.tar
+    rm -rf teste.tar
+
+    #Diff
+    docker run -d --name web nginx
+    touch teste.txt
+    docker exec -it web ls /
+    docker diff
+    docker commit web nginx-curso:1.0
+    docker rm -f web
+    docker run -d --name teste nginx-curso:1.0
+    docker ps
+    docker exec -it teste /bin/bash
+    ls -la
+    docker diff teste
+
+#Volumes
+
+    docker run -d --volume /teste --name volume nginx
+    docker logs volume
+    docker exec -it volume /bin/bash
+    echo "Ola" > /teste/saida.txt
+    docker inspect --format '{{ range .Mounts }}{{ if eq .Destination "/teste" }}{{ .Source }}{{ end }}{{ end }}' volume
+    sudo ls /var/lib/docker/volumes/<<volume docker>>
+
+    #Mapeando volumes de outro container
+    docker run -it --name busy --volumes-from nginx busybox /bin/bash
+
+    #Mapeando volumes para caminho fixodo host
+    cd /curso-docker
+    echo "<html><body><h1>oi</h1></body></html>" > principal.html
+    docker run -d --name nginx -v ${PWD}/index.html:/usr/share/nginx/html/index.html nginx
+    rm -rf principal.html

@@ -1,0 +1,18 @@
+Vagrant.configure("2") do |config|
+
+  config.vm.define "docker" do |docker|
+    docker.vm.box = "curso-docker"
+    docker.vm.box = "centos7.2"
+    docker.vm.hostname = "curso-docker"
+    docker.vm.provision :shell, path: "bootstrap.sh"
+    docker.vm.network "private_network", ip: "192.168.0.17"
+    docker.vm.network "forwarded_port", guest: 8080, host: 8080, host_ip: "127.0.0.1"
+    docker.vm.network "forwarded_port", guest: 8090, host: 8090, host_ip: "127.0.0.1"
+    docker.vm.synced_folder "./", "/curso-docker", owner: 'vagrant', group: 'vagrant', mount_options: ['dmode=775,fmode=775']
+    docker.vm.provider "virtualbox" do |v|
+      v.memory = 3072
+      v.cpus = 2
+    end
+  end
+
+end
