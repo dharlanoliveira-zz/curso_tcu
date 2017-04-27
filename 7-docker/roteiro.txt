@@ -60,19 +60,6 @@
     docker load -i teste.tar
     rm -rf teste.tar
 
-    #Diff
-    docker run -d --name web nginx
-    touch teste.txt
-    docker exec -it web ls /
-    docker diff
-    docker commit web nginx-curso:1.0
-    docker rm -f web
-    docker run -d --name teste nginx-curso:1.0
-    docker ps
-    docker exec -it teste /bin/bash
-    ls -la
-    docker diff teste
-
 #Volumes
 
     docker run -d --volume /teste --name volume nginx
@@ -85,8 +72,83 @@
     #Mapeando volumes de outro container
     docker run -it --name busy --volumes-from nginx busybox /bin/bash
 
-    #Mapeando volumes para caminho fixodo host
+    #Mapeando volumes para caminho fixo do host
     cd /curso-docker
     echo "<html><body><h1>oi</h1></body></html>" > principal.html
-    docker run -d --name nginx -v ${PWD}/index.html:/usr/share/nginx/html/index.html nginx
+    docker run -d --name nginx -v ${PWD}/principal.html:/usr/share/nginx/html/index.html -v ${PWD}/nginx/nginx.conf:/etc/nginx/nginx.conf nginx //arquivo nginx.conf serve para desabilitar o cache
+    docker run -it --name nginx-test --link nginx:nginx busybox /bin/sh
+    wget -O - http://nginx:80
+    echo "<html><body><h1>Novo html</h1></body></html>" > principal.html
     rm -rf principal.html
+
+#Network
+
+    #Closed network
+    docker run --rm alpine:latest ping -w 8.8.8.8
+    docker run --rm --net none alpine:latest ping -w 2 8.8.8.8
+
+    #Bridged network
+    docker run --rm --net bridge alpine:latest ip addr
+    docker run --rm alpine:latest ping -w 2 8.8.8.8
+
+    #Open container
+    docker run --rm --net host alpine ip addr
+
+    #Hosts
+    docker run --rm --hostname tcu alpine:latest nslookup tcu
+    docker run --rm --add-host dnsgoogle:8.8.8.8 alpine:latest nslookup dnsgoogle
+    docker run --rm --add-host dnsgoogle:8.8.8.8 alpine:latest cat /etc/hosts
+
+    #Portas
+    docker run -d --rm -p 8080:80 nginx
+    chrome: http://localhost:8080/
+
+    docker run -d --rm -P --name nginx nginx
+    docker port nginx
+    docker ps
+
+#Limitação de recursos
+
+    docker run -d --memory 256m --cpu-shares 1024 nginx
+
+#Usuários
+
+    docker run --rm busybox whoami
+    docker run --rm busybox id
+
+    docker run --rm busybox --user nobody whoami
+    docker run --rm busybox --user nobody id
+
+
+#Construção de Imagens
+
+  docker run -d --name web nginx
+  docker exec -it web /bin/bash
+  touch teste.txt
+  exit
+  docker exec -it web ls /
+  docker diff web
+  docker commit web teste:latest
+  docker rm -f web
+  docker run -d --name teste nginx-curso:1.0
+  docker ps
+  docker exec -it teste /bin/bash
+  ls -la
+  docker diff teste
+  docker history teste
+
+  #Tags
+  docker tag teste:latest dockertcu/teste:dharlan
+
+  #Publicar
+  docker login -u dockertcu -p 123456
+  docker push dockertcu/teste:dharlan
+
+  #Dockerfile 1
+  echo "<html><body><h1>Dockerifle</h1></body></html>" > principal.html
+  cp ./dockerfile-modelos/Dockerfile-nginx ./Dockerfile
+  docker build -t nginx-smart .
+  docker images
+  docker run -p 8080:80 -d nginx-smart
+  chrome:http://localhost:8080
+  rm -rf principal.html Dockerfile
