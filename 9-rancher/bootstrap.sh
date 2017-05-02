@@ -12,22 +12,8 @@ yum install -y openssh
 echo "Criando aliases"
 alias ll=`ls -la`
 
-echo "Removendo instalações docker"
-yum remove docker \
-           docker-common \
-           container-selinux \
-           docker-selinux \
-           docker-engine
-
-echo "Adicionando repositório do docker"
-yum install -y yum-utils
-
-yum-config-manager \
-    --add-repo \
-    https://download.docker.com/linux/centos/docker-ce.repo
-
-echo "Instalando docker"
-yum install -y docker-ce
+#Instalando docker versão 1.12
+curl https://releases.rancher.com/install-docker/1.12.sh | sh
 systemctl start docker
 docker run hello-world
 

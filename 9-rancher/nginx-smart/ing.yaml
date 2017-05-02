@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: nginx-smart
+spec:
+  rules:
+  - host: smart.rancher.com
+    http:
+      paths:
+      - backend:
+          serviceName: svc-nginx-smart
+          servicePort: 8080

@@ -1,0 +1,3 @@
+
+ALTER TABLE Pessoa DROP COLUMN PrimeiroNome;
+ALTER TABLE Pessoa DROP COLUMN UltimoNome;
