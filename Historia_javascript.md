@@ -21,4 +21,4 @@
 - O browser passou a ser enxergado como uma possibilidade de desenvolvimento multiplataforma
 - Com o HTML5 o browser passou a ganhar capacidade de armazenamento, cache, geolocalização, webworkers
 - Como Javascript é a linguagem "nativa" dos browsers, os resultados de usabilidade são muito superiores a frameworks como JSF e Wicket
-- Javascript começa a ganhar força e a mudar o referencial de desenvolvimento de software pelo mundo 
+- Javascript começa a ganhar força e a mudar o referencial de desenvolvimento de software pelo mundo

@@ -46,6 +46,6 @@ Generics
 NodeJS
 
 Interpretador de código Javascript
-Criado para funcionar do lado servidor
+Muito usado do lado servidor
 Tem alta performance devido a um modelo orientado a eventos de I/O
 Usado por Netflix, Paypal, Linkedin, Uber
