@@ -79,8 +79,7 @@ app.post('/delete-task', (req, res) => {
 app.delete('/delete-all-tasks', (req, res) => {
     tasks = []
     res.json({},[
-        { rel: "self", method: "POST", href: 'http://localhost:3000/tasks' },
-        { rel: "all-tasks", method: "GET", title: 'Lista de tarefas', href: 'http://localhost:3000/all-tasks' }
+        { rel: "self", method: "POST", href: 'http://localhost:3000/tasks' }
     ]);
     res.sendStatus(200);
 });

@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -p .",
-    "build-watch": "tsc --watch -p .",
+    "build": "tsc --watch -p .",
     "run": "nodemon --watch out out/servidor.js"
   },
   "keywords": [],
