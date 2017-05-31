@@ -5,11 +5,6 @@ npm install ts-node --save-dev
 npm install nodemon --save-dev
 node ./node_modules/typescript/lib/tsc --init
 
-Scripts
-
-"scripts": {
-   "start": "npm run build:live",
-   "build:live": "nodemon --exec ts-node index.ts"
- }
-
- npm start
+Executar index.ts
+Executar typings.ts
+Executar basico_typescript.ts

@@ -5,21 +5,18 @@
     let objeto = {
         propriedade: 'valor'
     }
+    let array: string[] = ['valor1', 'valor2', 'valor3']
 
     console.log(nome);
     console.log(checado);
     console.log(idade);
     console.log(objeto);
+    console.log(array);
 
     let template: string = `minha idade é ${idade}`;
     console.log(template)
-});
+})();
 
-(function array() {
-    let array: string[] = ['oi1', 'oi2', 'oi3']
-
-    console.log(array);
-});
 
 (function enumeracao() {
     enum Direction {
