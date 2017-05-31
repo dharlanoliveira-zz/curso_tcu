@@ -8,6 +8,8 @@ import {RouterModule, Routes} from '@angular/router';
 import {RootComponent} from './root.component';
 import {NewtaskComponent} from './newtask/newtask.component';
 import { ToUpperDirective } from './to-upper.directive';
+import {AlertasComponent} from "./erros/alertas.component";
+import {Informacoes} from "./erros/informacoes.injectable";
 
 const appRoutes: Routes = [
   {
@@ -37,9 +39,10 @@ const appRoutes: Routes = [
     RootComponent,
     TasklistComponent,
     NewtaskComponent,
-    ToUpperDirective
+    ToUpperDirective,
+    AlertasComponent
   ],
-  providers: [],
+  providers: [Informacoes],
   bootstrap: [RootComponent]
 })
 export class AppModule {

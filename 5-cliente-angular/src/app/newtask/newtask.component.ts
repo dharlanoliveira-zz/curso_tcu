@@ -2,6 +2,7 @@ import {ChangeDetectorRef, Component, OnInit, ViewEncapsulation} from '@angular/
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
 import {Http} from '@angular/http';
+import {Informacoes} from "../erros/informacoes.injectable";
 
 @Component({
   selector: 'newtask',
@@ -13,7 +14,7 @@ export class NewtaskComponent implements OnInit {
 
   private formModel: FormGroup;
 
-  constructor(public formBuilder: FormBuilder, public router: Router, public http: Http) {
+  constructor(public formBuilder: FormBuilder, public router: Router, public http: Http, public informacoes: Informacoes) {
 
   }
 
@@ -29,7 +30,16 @@ export class NewtaskComponent implements OnInit {
 
   public newTask(f: any) {
     this.http.post('http://localhost:3000/tasks', {task: f.task})
-      .subscribe(() => this.router.navigate(['tasks']));
+      .subscribe(() => {
+        this.informacoes.novoSucesso("Tarefa salva com sucesso");
+        this.router.navigate(['tasks'])
+      }), (e) => {
+      if (e.status == 0) {
+        this.informacoes.novoErro('Serviço está fora do ar');
+      } else {
+        this.informacoes.novoErro(e.statusText);
+      }
+    }
   }
 
 }
