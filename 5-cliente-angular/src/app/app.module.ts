@@ -10,6 +10,8 @@ import {NewtaskComponent} from './newtask/newtask.component';
 import { ToUpperDirective } from './to-upper.directive';
 import {AlertasComponent} from "./erros/alertas.component";
 import {Informacoes} from "./erros/informacoes.injectable";
+import {ParentComponent} from "./parent-child/parent.component";
+import {ChildComponent} from "./parent-child/child.component";
 
 const appRoutes: Routes = [
   {
@@ -19,6 +21,10 @@ const appRoutes: Routes = [
   {
     path: 'newtask',
     component: NewtaskComponent
+  },
+  {
+    path: 'parent',
+    component: ParentComponent
   },
   {
     path: '',
@@ -39,10 +45,14 @@ const appRoutes: Routes = [
     RootComponent,
     TasklistComponent,
     NewtaskComponent,
+    ParentComponent,
+    ChildComponent,
     ToUpperDirective,
     AlertasComponent
   ],
-  providers: [Informacoes],
+  providers: [
+    Informacoes
+  ],
   bootstrap: [RootComponent]
 })
 export class AppModule {

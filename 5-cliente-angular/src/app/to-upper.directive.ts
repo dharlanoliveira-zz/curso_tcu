@@ -13,9 +13,10 @@ export class ToUpperDirective {
 
   @HostListener('keyup')
   public onInputChange() {
-    // this.ref.detectChanges(); -- AJUDA A EVITAR ERRO DE ULTIMO CARACTER PERMANCER MINUSCULO
+    console.log("aqui");
     let valor = this.element.nativeElement.value;
     this.element.nativeElement.value = valor.toUpperCase();
+    this.ref.detectChanges();
   }
 
 }
