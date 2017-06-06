@@ -12,7 +12,7 @@ spec:
         app: nginx
     spec:
       containers:
-        - name: instrumento
+        - name: nginx
           image: nginx
           ports:
             - containerPort: 80
