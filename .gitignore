@@ -28,3 +28,5 @@
 /3.1-servidor-http-typescript-node-hateoas/.idea
 /3.1-servidor-http-typescript-node-hateoas/out
 /1-exemplo-nodejs/.idea
+/7-docker/Dockerfile
+/7-docker/principal.html

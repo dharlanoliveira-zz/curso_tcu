@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: dockertcu/nginx-smart
+          image: dockertcu/nginx-smart:v1
           ports:
             - containerPort: 80
