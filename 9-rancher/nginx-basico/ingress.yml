@@ -3,6 +3,8 @@ kind: Ingress
 metadata:
   name: nginx
   namespace: curso
+  annotations:
+    http.port: "9999"
 spec:
   rules:
   - host: teste.nginx
