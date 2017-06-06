@@ -1,2 +1,5 @@
 0. Overview rancher e kubernetes
 1. Criar aplicação nginx básica
+2. Escalar deployment
+   kubectl scale deployments/nginx --namespace=curso --replicas=4
+2. Atualizar para nginx smart
