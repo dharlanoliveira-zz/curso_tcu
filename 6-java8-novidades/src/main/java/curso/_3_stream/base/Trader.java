@@ -1,4 +1,4 @@
-package curso.stream.base;
+package curso._3_stream.base;
 
 public class Trader {
 

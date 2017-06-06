@@ -1,0 +1,5 @@
+Observable.from(source)
+    .map(x => parseInt(x))
+    .filter(x => !isNaN(x))
+    .reduce((x,y) => x + y)
+    .subscribe(x => result = x);

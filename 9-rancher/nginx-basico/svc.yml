@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+  namespace: curso
+spec:
+  ports:
+  - name: http
+    protocol: "TCP"
+    port: 8099
+    targetPort: 80
+
+  selector:
+    app: instrumento
+  type: LoadBalancer  

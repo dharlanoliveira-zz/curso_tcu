@@ -1,4 +1,4 @@
-package curso.ex1;
+package curso._1_introducao;
 
 public class Maca {
 

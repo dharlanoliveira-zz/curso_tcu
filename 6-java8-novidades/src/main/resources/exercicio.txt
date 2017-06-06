@@ -1,0 +1,6 @@
+System.out.println(arquivo()
+                .map((n) -> new ImmutablePair<String,Integer>(n, n.length()))
+                .sorted(comparing((ImmutablePair i) -> (Integer) i.getRight()).reversed())
+                .findFirst()
+                .get()
+                .getLeft());

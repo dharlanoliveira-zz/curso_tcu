@@ -1,4 +1,4 @@
-package curso.stream.operacoes_basicas;
+package curso._3_stream.operacoes_basicas;
 
 public class Dish {
     private final String name;

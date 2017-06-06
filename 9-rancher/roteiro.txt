@@ -1,0 +1,2 @@
+0. Overview rancher e kubernetes
+1. Criar aplicação nginx básica

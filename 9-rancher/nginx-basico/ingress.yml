@@ -2,11 +2,12 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: nginx
+  namespace: curso
 spec:
   rules:
-  - host: foo.bar.com
+  - host: teste.nginx
     http:
       paths:
       - backend:
-          serviceName: svc-nginx
-          servicePort: 8080
+          serviceName: nginx
+          servicePort: 8099

@@ -1,6 +1,4 @@
-import {Subject} from "rxjs";
-import {Observable} from 'rxjs/Observable';
-import {ReplaySubject} from 'rxjs/ReplaySubject';
+import {Subject, Observable, ReplaySubject} from "rxjs";
 
 //1. Subject simples
 /*var myObservable: Subject<string> = new Subject();
@@ -43,43 +41,41 @@ class Pessoa {
 }
 
 /*let myObservable: Subject<Pessoa> = new Subject();
-myObservable
-    .map((pessoa => pessoa.nome))
-    .subscribe((nome) => console.log(`O nome emitido é ${nome}`));
+ myObservable
+ .map((pessoa => pessoa.nome))
+ .subscribe((nome) => console.log(`O nome emitido é ${nome}`));
 
-myObservable.next(new Pessoa('José'));
-myObservable.next(new Pessoa('Paulo'));
+ myObservable.next(new Pessoa('José'));
+ myObservable.next(new Pessoa('Paulo'));*/
 
-myObservable = new Subject();
-myObservable
-    .map((pessoa => pessoa.nome))
-    .filter((nome) => nome.length >= 5)
-    .subscribe((nome) => console.log(`O nome emitido é ${nome}`));
+/*myObservable = new Subject();
+ myObservable
+ .map((pessoa => pessoa.nome))
+ .filter((nome) => nome.length >= 5)
+ .subscribe((nome) => console.log(`O nome emitido é ${nome}`));
 
-myObservable.next(new Pessoa('Joe'));
-myObservable.next(new Pessoa('John Paul'));*/
+ myObservable.next(new Pessoa('Joe'));
+ myObservable.next(new Pessoa('John Paul'));*/
 
-//5. Interval e timer
+//5. Interval (repete) e timer (uma única vez)
 
 /*Observable.interval(500).subscribe((v) => {
  console.log(v)
  });*/
 
 /*Observable.timer(5000).subscribe((v) => {
- console.log(v)
- });*/
+    console.log(v)
+});*/
 
-//5. Combinando observables
+//6. Combinando observables
 
-/*
- let obs1:Subject<string> = new ReplaySubject();
+/* let obs1:Subject<string> = new ReplaySubject();
  let obs2:Subject<string> = new ReplaySubject();
  let obs3:Subject<string> = new ReplaySubject();
- */
 
 //var result = Observable.concat(obs1,obs2,obs3); //Passa para o 2 apenas quando terminar o 1
 //var result = Observable.merge(obs1,obs2,obs3); //Mantem a ordem
-/*var result = Observable.forkJoin(obs1,obs2,obs3); //Só o ultimo de cada observador, assim que todos os observadores estiverem completos
+//var result = Observable.forkJoin(obs1,obs2,obs3); //Só o ultimo de cada observador, assim que todos os observadores estiverem completos
 
  result.subscribe((x) => console.log(x));
 
@@ -97,6 +93,14 @@ myObservable.next(new Pessoa('John Paul'));*/
  obs1.complete();
  obs3.next('Obs 3.1')
  obs3.complete();*/
+
+
+/* 7. Reduce */
+
+/*Observable.range(1,10)
+    .reduce((x, y) => x + y)
+    .subscribe(x => console.log(x));*/
+
 
 //Dependência entre observables, maneira de encadear observadores no rxjs
 /*let first = Observable.of(10);
@@ -120,8 +124,8 @@ myObservable.next(new Pessoa('John Paul'));*/
  console.log(it)
  });*/
 
-/*
- observable.first().subscribe((it) => {
+
+ /*observable.first().subscribe((it) => {
  console.log(it)
  })*/
 
@@ -136,3 +140,5 @@ myObservable.next(new Pessoa('John Paul'));*/
 /*observable.min().subscribe((it) => {
  console.log(it);
  })*/
+
+

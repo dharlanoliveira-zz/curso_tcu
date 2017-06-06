@@ -1,9 +1,9 @@
-package curso.ex1;
+package curso._1_introducao;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static curso.ex1.Imprimir.imprimir;
+import static curso._1_introducao.Imprimir.imprimir;
 
 public class Filtrar2 {
 

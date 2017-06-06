@@ -1,4 +1,4 @@
-package curso.ex1;
+package curso._1_introducao;
 
 import java.util.ArrayList;
 import java.util.List;
