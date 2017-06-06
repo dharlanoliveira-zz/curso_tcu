@@ -3,3 +3,5 @@
 2. Escalar deployment
    kubectl scale deployments/nginx --namespace=curso --replicas=4
 2. Atualizar para nginx smart
+    kubectl set image deployment/nginx nginx=dockertcu/nginx-smart:v2  
+    kubectl rollout status deployment/nginx
