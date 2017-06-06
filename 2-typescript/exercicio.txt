@@ -1,0 +1,46 @@
+let palavra: string = 'Curso de introducao a microservicos';
+
+let score = (palavra: string) => {
+    let letterValues : LetterValues = new LetterValues();
+
+    return Array.from(palavra)
+        .reduce((sum,val,index) => {
+            return sum + letterValues.value(val);
+        }, 0);
+};
+
+class LetterValues {
+
+    private lettersValuesConfig: LetterValuesConfig[] = [];
+
+    constructor(){
+        this.lettersValuesConfig.push(new LetterValuesConfig(1,['A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T']));
+        this.lettersValuesConfig.push(new LetterValuesConfig(2,['D', 'G']));
+        this.lettersValuesConfig.push(new LetterValuesConfig(3,['B', 'C', 'M', 'P']));
+        this.lettersValuesConfig.push(new LetterValuesConfig(4,['F', 'H', 'V', 'W', 'Y']));
+        this.lettersValuesConfig.push(new LetterValuesConfig(5,['K']));
+        this.lettersValuesConfig.push(new LetterValuesConfig(5,['J', 'X']));
+        this.lettersValuesConfig.push(new LetterValuesConfig(10,['Q', 'Z']));
+    }
+
+    value(letter:string){
+        let letterConfig:LetterValuesConfig = this.lettersValuesConfig
+            .find((config: LetterValuesConfig) => {
+                return config.applyTo(letter);
+            });
+        return letterConfig.value;
+    }
+
+}
+
+class LetterValuesConfig {
+    constructor(public value:number, public letters:string[]){
+
+    }
+
+    public applyTo(letter:string) : boolean{
+        return this.letters.indexOf(letter[0].toUpperCase()) >= 0;
+    }
+}
+
+console.log(score(palavra));

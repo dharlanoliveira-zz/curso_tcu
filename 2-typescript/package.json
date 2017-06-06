@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc --watch -p .",
-    "run": "nodemon --watch out out/typings.js"
+    "run": "nodemon --watch out out/corejs.js"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +17,5 @@
     "nodemon": "^1.11.0",
     "ts-node": "^2.0.0",
     "typescript": "^2.1.4"
-  },
-  "dependencies": {
-    "@types/node": "^6.0.60"
   }
 }

@@ -8,3 +8,6 @@ node ./node_modules/typescript/lib/tsc --init
 Executar index.ts
 Executar typings.ts
 Executar basico_typescript.ts
+
+Realizar exercício (lodash)
+- http://exercism.io/exercises/typescript/scrabble-score/
