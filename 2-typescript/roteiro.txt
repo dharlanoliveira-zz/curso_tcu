@@ -11,3 +11,4 @@ Executar basico_typescript.ts
 
 Realizar exercício (lodash)
 - http://exercism.io/exercises/typescript/scrabble-score/
+- http://exercism.io/exercises/typescript/robot-name/
